@@ -1,0 +1,41 @@
+@include mediaTo($size960) {
+    .contact_page {
+        .right_block {
+            @include colSize(12);
+            border-top: 1px solid $descColor;
+            padding-top: 20px;
+            img{
+                display: none
+            }
+            ul{
+                position: relative;
+                padding: 0 0 20px;
+            }
+        }
+
+        .left_block {
+            @include colSize(12);
+            padding-top: 20px;
+        }
+
+        .contact_section {
+            padding: 0 $colPadding*3;
+        }
+    }
+}
+
+@include mediaTo($size768) {
+    .contact_page {
+        margin-top: 120px;
+        .filter_contact{
+            li{
+                flex: 1;
+                a{
+                    padding: 10px 15px;
+                    text-align: center;
+                    height: 100%;
+                }
+            }
+        }
+    }
+}

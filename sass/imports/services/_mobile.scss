@@ -1,0 +1,30 @@
+@include mediaTo($size960) {
+    .services_page {
+        .right_block,
+        .left_block {
+            @include standardCol(12);
+            margin-bottom: 20px;
+        }
+
+        .inner_head{
+            flex-direction: column;
+            align-items: self-start;
+            .secondary_btn{
+                margin-top: 20px;
+            }
+        }
+
+        .services_block {
+            padding: 20px;
+        }
+       
+    }
+}
+
+@include mediaTo($size768) {
+    .services_page {
+        .services_list {
+            margin-top: -150px;
+        }
+    }
+}

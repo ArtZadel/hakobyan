@@ -1,0 +1,100 @@
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+  .header .main_menu {
+    margin: 0 -15px;
+  }
+  .header .main_menu li {
+    padding: 0 15px;
+  }
+}
+@media screen and (min-width: 1201px) {
+  .header .main_menu {
+    margin: 0 -30px;
+  }
+  .header .main_menu li {
+    padding: 0 30px;
+  }
+}
+@media screen and (min-width: 1201px) {
+  .services_page .left_block {
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+  }
+}
+@media screen and (min-width: 1201px) and (min-width: 1025px) {
+  .services_page .left_block {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+@media screen and (min-width: 1201px) and (max-width: 1024px) {
+  .services_page .left_block {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+@media screen and (min-width: 1201px) {
+  .services_page .right_block {
+    flex: 0 0 66.66%;
+    max-width: 66.66%;
+  }
+}
+@media screen and (min-width: 1201px) and (min-width: 1025px) {
+  .services_page .right_block {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+@media screen and (min-width: 1201px) and (max-width: 1024px) {
+  .services_page .right_block {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+@media screen and (min-width: 1201px) {
+  .services_page .services_block {
+    padding: 40px 90px 90px;
+  }
+}
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+  .services_page .left_block {
+    flex: 0 0 41.66%;
+    max-width: 41.66%;
+  }
+}
+@media screen and (min-width: 1025px) and (max-width: 1200px) and (min-width: 1025px) {
+  .services_page .left_block {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+@media screen and (min-width: 1025px) and (max-width: 1200px) and (max-width: 1024px) {
+  .services_page .left_block {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+  .services_page .right_block {
+    flex: 0 0 58.33%;
+    max-width: 58.33%;
+  }
+}
+@media screen and (min-width: 1025px) and (max-width: 1200px) and (min-width: 1025px) {
+  .services_page .right_block {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+@media screen and (min-width: 1025px) and (max-width: 1200px) and (max-width: 1024px) {
+  .services_page .right_block {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+  .services_page .services_block {
+    padding: 20px 50px 50px;
+  }
+}
+
+/*# sourceMappingURL=index-l.css.map */

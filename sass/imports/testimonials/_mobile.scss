@@ -1,0 +1,50 @@
+@include mediaTo($size960) {
+    .testimonials_page {
+        .inner_block {
+            padding: 40px 30px 30px;
+        }
+        .tab_inner {
+            padding: 20px;
+            flex-direction: column;
+        }
+        .tab_section {
+            padding-bottom: 70px;
+        }
+        .tab_btns,
+        .tabs_container {
+            @include colSize(12)
+        }
+        .name_block {
+            padding: 0 0 0 20px;
+        }
+    }
+
+}
+
+@include mediaTo($size768) {
+    .testimonials_page {
+        .tab_section {
+            padding-bottom: 50px;
+        }
+        .inner_block {
+            padding-bottom: 20px;
+        }
+        .inner_block {
+            border-radius: 10px;
+        }
+    }
+}
+
+@include mediaTo($size576) {
+    .testimonials_page {
+        .tab_section {
+            padding-bottom: 30px;
+        }
+        .tab_inner {
+            flex-direction: column;
+        }
+        .inner_page {
+            margin-top: -70px;
+        }
+    }
+}

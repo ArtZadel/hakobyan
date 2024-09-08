@@ -1,0 +1,18 @@
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+  .header .main_menu {
+    margin: 0 -15px;
+  }
+  .header .main_menu li {
+    padding: 0 15px;
+  }
+}
+@media screen and (min-width: 1201px) {
+  .header .main_menu {
+    margin: 0 -30px;
+  }
+  .header .main_menu li {
+    padding: 0 30px;
+  }
+}
+
+/*# sourceMappingURL=index-l.css.map */

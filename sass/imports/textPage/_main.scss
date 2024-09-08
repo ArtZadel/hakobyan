@@ -1,0 +1,24 @@
+.text_page {
+    .head_block {
+        @include headBlog(238px);
+        padding-bottom: 40px;
+        @include mediaTo($size960) {
+            @include headBlog(150px);
+            padding: 60px 0;
+        }
+        .page_title {
+            text-align: left;
+            margin: 0;
+            padding: 45px 120px 0;
+            white-space: nowrap;
+            @include mediaTo($size960) {
+                text-align: center;
+            }
+        }
+    }
+    .standard_textpage {
+        max-width: 1228px;
+        padding: 55px 0 100px;
+    }
+ 
+}

@@ -1,0 +1,145 @@
+@include mediaTo($size960) {
+    .about_page {
+        .founder_section {
+            padding: 60px 0 180px;
+        }
+
+        .timeline_section {
+            padding: 8px 0 60px;
+
+            .swiper_inner {
+                &:before {
+                    bottom: -54px;
+                }
+            }
+
+            .swiper-slide-visible {
+                &.swiper-slide-thumb-active {
+                    .swiper_inner {
+                        &:after {
+                            margin: 26px auto 0;
+                        }
+                    }
+                }
+            }
+
+            .story_slider .swiper-slide {
+                padding: 30px 50px 60px;
+            }
+        }
+
+        .faq_section {
+            padding: 60px 0;
+        }
+    }
+}
+
+
+@include mediaTo($size768) {
+    .about_page {
+        .top_img_block {
+            .page_title {
+                margin-top: -30px;
+            }
+        }
+
+        .mission_section {
+            padding: 30px 0 40px;
+
+            .page_container {
+
+                &:after,
+                &:before {
+                    display: none
+                }
+            }
+        }
+
+        .inner_section {
+
+            .left_block,
+            .right_block {
+                @include colSize(12);
+
+                .description_block {
+                    padding: 20px 0 0;
+                }
+            }
+
+            .secondary_btn {
+                margin: 30px 0 0;
+            }
+        }
+
+        .consultation_section {
+            padding: 50px 0;
+        }
+
+        .faq_section {
+            padding: 40px 0;
+        }
+
+        .timeline_section {
+            padding-bottom: 40px;
+
+            .year_slider:before {
+                height: 2px;
+            }
+
+            .swiper_inner {
+                &:before {
+                    bottom: -60px;
+                }
+            }
+
+            .swiper-slide-visible {
+                &.swiper-slide-thumb-active {
+                    .swiper_inner {
+                        &:after {
+                            margin: 32px auto 0;
+                        }
+                    }
+                }
+            }
+
+            .story_slider .swiper-slide {
+                padding: 20px 40px 50px;
+            }
+        }
+        .faq_section {
+            .faq_list {
+                .drop_inner {
+                    padding: 0 0 30px;
+                }
+            }
+        }
+    }
+}
+
+
+@include mediaTo($size576) {
+    .about_page {
+        .timeline_section {
+            margin-top: -128px;
+
+            .swiper-slide-visible {
+                &.swiper-slide-thumb-active {
+                    .swiper_inner {
+                        &:after {
+                            margin: 33px auto 0;
+                        }
+                    }
+                }
+            }
+
+            .year_slider {
+                padding: 85px 0 60px;
+            }
+
+            .story_slider .swiper-slide {
+                padding: 20px 15px 40px;
+            }
+        }
+    }
+
+}

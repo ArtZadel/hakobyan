@@ -1,0 +1,165 @@
+@font-face {
+    font-family: "bold";
+    font-display: swap;
+    src: url('../../fonts/Inter-Bold/Inter-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../../fonts/Inter-Bold/Inter-Bold.woff') format('woff'),
+    url('../../fonts/Inter-Bold/Inter-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "extra";
+    font-display: swap;
+    src: url('../../fonts/Inter-ExtraBold/Inter-ExtraBold.eot?#iefix') format('embedded-opentype'),
+    url('../../fonts/Inter-ExtraBold/Inter-ExtraBold.woff') format('woff'),
+    url('../../fonts/Inter-ExtraBold/Inter-ExtraBold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "regular";
+    font-display: swap;
+    src: url('../../fonts/Inter-Regular/Inter-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../../fonts/Inter-Regular/Inter-Regular.woff') format('woff'),
+    url('../../fonts/Inter-Regular/Inter-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'icon';
+    font-display: 'auto';
+    src: url('../../fonts/icons/icomoon.eot?a6sz1e');
+    src: url('../../fonts/icons/icomoon.eot?a6sz1e#iefix') format('embedded-opentype'),
+    url('../../fonts/icons/icomoon.ttf?a6sz1e') format('truetype'),
+    url('../../fonts/icons/icomoon.woff?a6sz1e') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class*="icon_"] {
+    @extend %iconElement;
+}
+
+//social icons
+.icon_facebook:before {
+    content: "\e90a";
+}
+
+.icon_instagram:before {
+    content: "\e90b";
+}
+
+.icon_linkedin:before {
+    content: "\e90c";
+}
+
+.icon_twitter:before {
+    content: "\e90d";
+}
+
+.icon_pinterest:before {
+    content: "\e90e";
+}
+
+.icon_youtube:before {
+    content: "\e90f";
+}
+
+.icon_telegram:before {
+    content: "\e91a";
+}
+
+.icon_ok:before {
+    content: "\e91b";
+}
+
+.icon_vk:before {
+    content: "\e91c";
+}
+
+.icon_google:before {
+    content: "\e91d";
+}
+
+.icon_tiktok:before {
+    content: "\e91e";
+}
+
+.icon_flickr:before {
+    content: "\e91f";
+}
+
+//other icons
+.icon_s1_logo:before {
+    content: "\e900";
+}
+
+.icon_down:before {
+    content: "\e901";
+}
+
+.icon_left:before {
+    content: "\e902";
+}
+
+.icon_right:before {
+    content: "\e903";
+}
+
+.icon_close:before {
+    content: "\e904";
+}
+
+.icon_check:before {
+    content: "\e905";
+}
+
+.icon_search:before {
+    content: "\e906";
+}
+
+.icon_globe:before {
+    content: "\e907";
+}
+
+.icon_info:before {
+    content: "\e908";
+}
+
+.icon_success:before {
+    content: "\e909";
+}
+
+.icon_warning:before {
+    content: "\e910";
+}
+
+.icon_error:before {
+    content: "\e911";
+}
+
+.icon_selected:before {
+    content: "\e912";
+}
+
+.icon_date:before {
+    content: "\e913";
+}
+
+.icon_calculator:before {
+    content: "\e912";
+}
+
+
+.icon_call:before {
+    content: "\e914";
+}
+.icon_pin:before {
+    content: "\e915";
+}
+.icon_mail:before {
+    content: "\e916";
+}

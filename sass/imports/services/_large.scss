@@ -1,0 +1,35 @@
+@include mediaFrom($size1200) {
+    .services_page {
+        .left_block {
+            @include standardCol(4);
+        }
+
+        .right_block {
+            @include standardCol(8);
+        }
+
+        .services_block {
+            padding: 40px 90px 90px;
+        }
+    }
+
+}
+
+
+@include mediaRange($size960, $size1200) {
+    .services_page {
+
+        .left_block {
+              @include standardCol(5);
+          }
+
+        .right_block {
+            @include standardCol(7);
+        }
+
+        .services_block {
+            padding: 20px 50px 50px;
+        }
+    }
+
+}

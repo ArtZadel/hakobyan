@@ -1,0 +1,23 @@
+
+
+@include mediaRange($size960, $size1200) {
+    .news_section {
+        .info_block  {
+            padding-left: 10px;
+        }
+        .news_btn {
+            margin-top: 30px;
+        }
+        .news_list li {
+            padding: 0 10px;
+            margin-bottom: 20px;
+        }
+    }
+}
+
+
+@include mediaRange($size960, $size1366) {
+    .news_block .sticker{
+        bottom: 35px;
+    }
+}

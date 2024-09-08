@@ -1,0 +1,59 @@
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+  .header .main_menu {
+    margin: 0 -15px;
+  }
+  .header .main_menu li {
+    padding: 0 15px;
+  }
+}
+@media screen and (min-width: 1201px) {
+  .header .main_menu {
+    margin: 0 -30px;
+  }
+  .header .main_menu li {
+    padding: 0 30px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .services_section .services_list > li {
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+  }
+}
+@media screen and (max-width: 1200px) and (min-width: 1025px) {
+  .services_section .services_list > li {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+@media screen and (max-width: 1200px) and (max-width: 1024px) {
+  .services_section .services_list > li {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+@media screen and (min-width: 1025px) and (max-width: 1440px) {
+  .main_section .inner_block:after {
+    left: 80%;
+    bottom: 25%;
+  }
+}
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+  .news_section .info_block {
+    padding-left: 10px;
+  }
+  .news_section .news_btn {
+    margin-top: 30px;
+  }
+  .news_section .news_list li {
+    padding: 0 10px;
+    margin-bottom: 20px;
+  }
+}
+@media screen and (min-width: 1025px) and (max-width: 1365px) {
+  .news_block .sticker {
+    bottom: 35px;
+  }
+}
+
+/*# sourceMappingURL=index-l.css.map */

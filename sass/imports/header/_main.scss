@@ -1,0 +1,217 @@
+.header {
+    z-index: 100;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    @include animStyle(0.3s);
+
+    &_block {
+        padding: $colPadding 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &.header_fix {
+        background: $white;
+        box-shadow: 4px 4px 16px 0 $shadowColor;
+        position: fixed;
+        @include animStyle(0.3s);
+
+        @include mediaFrom($size960) {
+            .main_menu a {
+                color: $darkBlue;
+            }
+        }
+
+        .menu_btn,
+        .lg_block .drop_btn {
+            color: $darkBlue;
+        }
+
+        .main_logo img {
+            display: none;
+        }
+
+        .main_logo .fix_logo {
+            display: block;
+        }
+
+        .main_menu a:before{
+            background: $darkBlue;
+        }
+    }
+
+    .mobile_version{
+        display: none;
+    }
+
+    .main_logo {
+        display: block;
+        font-size: 0;
+        line-height: 0;
+
+        .fix_logo {
+            display: none;
+        }
+
+        img {
+            display: block;
+            height: 53px;
+            width: auto;
+            object-fit: contain;
+        }
+    }
+
+    .lg_block {
+        position: relative;
+        z-index: 10;
+        padding: 4px 0;
+
+        .drop_btn {
+            @extend %linkTypeBtn;
+            color: $white;
+            border-radius: 50%;
+            display: flex;
+            align-content: center;
+            flex-direction: row-reverse;
+            font-family: $bold;
+
+            &:before {
+                display: block;
+                font-size: 1.7rem;
+                padding-left: 7px;
+                @include animStyle(all 0.5s);
+            }
+
+        }
+
+        .drop_inner {
+            position: absolute;
+            top: 30px;
+            right: 0;
+            background: $white;
+            border-radius: 5px;
+            display: none;
+        }
+
+        ul {
+            @extend %standardList;
+
+            a {
+                display: block;
+                text-align: center;
+                color: $darkBlue;
+                padding: 8px 20px;
+                font-family: $bold;
+                @extend %siteColorHover;
+            }
+        }
+
+        &.opened .drop_btn:before {
+            @extend %horizontalRotate;
+        }
+    }
+
+    .main_menu {
+        display: flex;
+        flex-wrap: wrap;
+        @extend %standardList;
+
+        a {
+            color: $white;
+            font-family: $bold;
+            @extend %standardText;
+            display: inline-block;
+            vertical-align: top;
+            position: relative;
+
+            &:before {
+                @include psevdoAbs;
+                width: 0;
+                height: 1px;
+                left: 0;
+                right: 0;
+                bottom: -2px;
+                background: $white;
+                @include animStyle(width 0.3s);
+            }
+
+            &:hover {
+                &:before{
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    .lg_block {
+        display: flex;
+        align-items: center;
+        color: $white;
+        border: none;
+        background: transparent;
+        flex-direction: row-reverse;
+        @extend %standardText;
+        margin-left: 30px;
+
+        &:before {
+            margin-left: 5px;
+            font-size: 1.2rem;
+        }
+    }
+
+
+    .menu_block {
+        @include mediaTo($size960) {
+            @include mobileMenu(fixed, 0, $darkBlue, 0.5s);
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            z-index: 99;
+        }
+    }
+
+    .menu_btn {
+        margin-left: auto;
+        padding-left: 20px;
+        width: 48px;
+        height: 48px;
+        @extend %linkTypeBtn;
+        color: $white;
+        @include zIndex(101);
+        display: none;
+
+
+        &:before,
+        &:after {
+            @include psevdoAbs;
+            border-top: 2px solid;
+            width: 23px;
+            left: 23px;
+            border-radius: 2px;
+            @include animStyle(all 0.5s);
+            @extend %noBlink;
+        }
+
+        &:before {
+            top: 15px;
+            @include torigin(top left);
+        }
+
+        &:after {
+            bottom: 15px;
+            @include torigin(bottom left);
+        }
+
+        span {
+            display: block;
+            width: 23px;
+            border-top: 2px solid;
+            border-radius: 2px;
+            margin: 0 auto;
+            @include animStyle(opacity 0.2s 0.3s);
+        }
+    }
+}

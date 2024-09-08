@@ -1,0 +1,50 @@
+@include mediaTo($size960) {
+    .footer {
+        .footer_inner {
+            padding: 25px 0 40px;
+        }
+
+        .bottom_inner {
+            justify-content: space-between;
+        }
+
+        .menu_list li {
+            padding: 0 15px 0;
+        }
+    }
+}
+
+@include mediaTo($size768) {
+    .footer {
+        .top_inner,
+        .bottom_inner {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .social_block {
+            padding-top: 20px;
+        }
+        .footer_btn {
+            margin-top: 20px;
+        }
+
+        .menu_list {
+            flex-direction: column;
+
+            li:not(:last-child) {
+                padding-bottom: 15px;
+            }
+        }
+    }
+}
+
+
+@include mediaTo($size576) {
+    .footer {
+        .footer_inner {
+            padding: 15px 0 30px;
+        }
+
+    }
+}

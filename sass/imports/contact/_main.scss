@@ -1,0 +1,107 @@
+.contact_page {
+    @extend %sectionMarginBottom;
+
+    .breadcrumbs {
+        padding: 110px 0 55px;
+
+        div {
+            color: $descColor3D;
+        }
+    }
+
+    .contact_section {
+        background: $white;
+        box-shadow: 4px 4px 16px 0 $shadowColor;
+        border-radius: 0 10px 10px 10px;
+    }
+
+    .left_block {
+        padding-top: 40px;
+
+        .description_sub {
+            font-family: $bold;
+            color: $descColor3D;
+        }
+    }
+
+
+    .right_block {
+
+        img {
+            width: 100%;
+            display: block;
+            object-fit: cover;
+            aspect-ratio: 520 / 723;
+            border-radius: 0 10px 10px 0;
+        }
+    }
+
+    .inner_block {
+        position: relative;
+        ul {
+            position: absolute;
+            list-style-type: none;
+            margin: 0;
+            padding: 40px 50px;
+            width: 100%;
+            background: $grayF8;
+            bottom: 0;
+            left: 0;
+            border-radius: 0 0 10px;
+            li {
+                &:not(:last-child) {
+                    padding-bottom: 25px;
+                }
+                a {
+                    @extend %middleText;
+                    color: $darkBlue;
+                    display: flex;
+                    align-items: center;
+                    @extend %opacityHover;
+                    &:before {
+                        background: $darkBlue;
+                        padding: 8px;
+                        border-radius: 10px;
+                        color: $white;
+                        margin-right: 10px;
+                        font-size: 2.4rem;
+                    }
+                }
+            }
+            @include mediaTo($size1200){
+                padding: $colPadding;
+            }
+        }
+    }
+
+    .filter_contact {
+        @extend %standardList;
+        @extend %middleSize;
+        text-transform: uppercase;
+        display: flex;
+        font-family: $bold;
+        color: $darkBlue;
+
+        li {
+            a {
+                display: block;
+                background: $bacgroundED;
+                padding: 16px 34px;
+                color: inherit;
+            }
+
+            &:first-child a {
+                border-radius: 10px 0 0 0;
+            }
+
+            &:last-child a {
+                border-radius: 0 10px 0 0;
+            }
+
+            &.active a {
+                background: $darkBlue;
+                color: $white;
+            }
+        }
+    }
+}

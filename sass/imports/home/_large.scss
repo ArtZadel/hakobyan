@@ -1,0 +1,17 @@
+
+@include mediaTo($size1200) {
+    .services_section .services_list > li{
+        @include standardCol(4);
+
+    }
+}
+
+@include mediaRange($size960, $size1440) {
+    .main_section {
+        .inner_block:after {
+            left: 80%;
+            bottom: 25%;
+        }
+    }
+
+}

@@ -1,0 +1,15 @@
+@include mediaFrom($size960) {
+    .contact_page {
+        .left_block {
+            @include standardCol(8);
+        }
+
+        .right_block {
+            @include standardCol(4);
+        }
+
+        .contact_section {
+            padding: 0 0 0 40px;
+        }
+    }
+}

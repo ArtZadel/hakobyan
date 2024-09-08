@@ -1,0 +1,181 @@
+@include mediaTo($size960) {
+    .main_section {
+        .section_title {
+            text-align: center;
+        }
+
+        .inner_block {
+            &:after {
+                left: 77%;
+                bottom: -15%;
+                width: 250px;
+            }
+        }
+
+        .main_inner {
+            padding: 120px 0 50px;
+        }
+    }
+    .statistic_section {
+        .statics_block li {
+            @include standardCol(6);
+            margin-bottom: 15px;
+        }
+    }
+    .founder_section {
+        .inner_section {
+            margin: 0 $rowMargin;
+        }
+
+        .right_block,
+        .left_block {
+            padding: 0 $colPadding;
+        }
+
+        .secondary_btn {
+            margin-top: 30px;
+        }
+
+        .founder_skills {
+            padding-left: 10px;
+        }
+    }
+    .services_section {
+        padding: 90px 0 90px;
+
+        .services_list {
+            padding-top: 30px;
+
+            > li {
+                @include standardCol(6);
+            }
+        }
+
+        .block_inner ul {
+            padding: 80px 30px 15px;
+            max-width: 100%;
+        }
+    }
+    .testimonials_section {
+        .testimonials_item {
+            padding: $colPadding;
+        }
+
+        .item_head {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .img_block {
+            margin-right: 0;
+        }
+
+        .name_block {
+            padding: 10px 0;
+        }
+
+    }
+}
+
+@include mediaTo($size768) {
+    .main_section {
+        .main_inner {
+            padding: 100px 0 30px;
+        }
+
+        .left_block,
+        .right_block {
+            @include standardCol(12);
+        }
+
+        .inner_block {
+            flex-direction: column-reverse;
+            flex-wrap: wrap;
+
+            &:after {
+                left: 74%;
+                bottom: 50%;
+            }
+        }
+
+        .description_block {
+            padding-top: 30px;
+        }
+
+        .primary_btn {
+            margin: 30px auto 0;
+        }
+    }
+    .founder_section {
+        .left_block,
+        .right_block {
+            @include standardCol(12);
+        }
+
+        .about_founder,
+        .right_block {
+            padding-top: 15px;
+        }
+
+        .secondary_btn {
+            margin: 20px auto 0;
+        }
+    }
+    .services_section {
+        padding: 50px 0 50px;
+
+        .services_list {
+            padding-top: 20px;
+
+            > li {
+                @include standardCol(6);
+            }
+        }
+
+        .block_inner {
+            height: 70px;
+            margin-top: -70px;
+            padding: 10px 20px 10px;
+        }
+    }
+    .testimonials_section {
+        .testimonials_list li {
+            @include standardCol(12);
+            margin-bottom: 20px;
+        }
+    }
+    .news_block .img_block {
+        @include colSize(12);
+    }
+}
+
+@include mediaTo($size576) {
+    .main_section {
+        .inner_block {
+            &:after {
+                left: 30%;
+                bottom: 50%;
+            }
+        }
+    }
+    .statistic_section {
+        .statics_block {
+            li {
+                @include standardCol(12);
+
+                &:not(:last-child) {
+                    padding-bottom: 10px;
+                    border-bottom: 1px solid $grayE5;
+                }
+            }
+        }
+    }
+    .services_section {
+        padding: 40px 0 60px;
+
+        .services_list > li {
+            @include standardCol(12);
+        }
+    }
+}
